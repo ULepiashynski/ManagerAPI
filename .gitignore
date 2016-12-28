@@ -1,0 +1,10 @@
+*.zip
+*.dll
+*.pdb
+*.exe
+*.config
+*.manifest
+*.xml
+*.cache
+*.txt
+*.cs
