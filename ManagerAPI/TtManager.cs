@@ -66,7 +66,7 @@ namespace ManagerAPI
 
             try
             {
-                AccountNewRequest request = AccountNewRequest.Create(-1, "123qwe!", "123qwe!", "demoforex_gross", AccountingTypes.Gross, "", "New user", null, false, false, 100, 10000, "USD");
+                AccountNewRequest request = AccountNewRequest.Create(-1, "qazxsw", "qazxsw", "demoforex_gross", AccountingTypes.Gross, "", "New user", null, false, false, 100, 10000, "USD");
                 _manager.CreateAccount(request);
             }
             catch (Exception ex)
