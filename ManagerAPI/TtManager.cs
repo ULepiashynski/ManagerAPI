@@ -94,7 +94,7 @@ namespace ManagerAPI
             }
         }
 
-        public void MakeDeposit(long accountLogin, decimal amount)
+        public void MakeDeposit(long accountLogin, decimal amount, string currency)
         {
             if (_manager == null || !_manager.IsConnected())
             {
@@ -106,7 +106,7 @@ namespace ManagerAPI
             {
                 DepositWithdrawalRequest request = new DepositWithdrawalRequest
                 {
-                    AccountId = accountLogin, Amount = amount, Currency = "USD", Comment = "Deposit"
+                    AccountId = accountLogin, Amount = amount, Currency = currency, Comment = "Deposit"
                 };
                 _manager.DepositWithdrawal(request);
             }
